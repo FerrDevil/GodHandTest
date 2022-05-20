@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="game">
+        <div class="playerWin">
+            <img src="imgs/ui/ending/victory.png" class="playerWinDialog">
+        </div>
+        <div class="playerLost">
+            <img src="imgs/ui/ending/defeat.png" class="playerLostDialog">
+        </div> 
+        <div class="showDeckCards">
+            <div class="deckCards">
+                <img class="deckBook" src="imgs/ui/deck/deck.png" alt="">
+                <div class="cards cards1"></div>
+                <div class="cards cards2"></div>
+            </div>
+        </div>
+        <img class="" src="imgs/background/BG.png">
+        <div class="playerCharacteristics">
+            <div class="playerCharacteristicsList">
+                <button class="closePlayerChar">x</button>
+            </div>
+        </div>
+        <div class="selectTarget">
+            Select Target
+        </div>
+        <div class="playerUnit">
+            <img class="playerModel" src="imgs/characters/player/plowGuard.png" alt="playerModel">
+            <div class="playerHP">
+                <div class="playerCurHP"></div>
+            </div>
+            <div class="playerStamina">
+            </div>
+            <div class="playerEffects">
+                <div class="stanceEffect playerStance">
+                    <div class="stanceDescription"></div>
+                </div>
+            </div>
+        </div>
+        <div class="enemyUnit">
+            <img class="enemyModel" src="imgs/characters/enemy/plowGuard.png" alt="enemyModel">
+            <div class="enemyHP">
+                <div class="enemyCurHP"></div>
+            </div>
+            <div class="enemyEffects">
+                <div class="stanceEffect enemyStance">
+                    <div class="stanceDescription"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="showDeckCards">
+            
+            <div class="deckCards">
+                <img class="deckBook" src="imgs/ui/deck/deck.png" alt="">
+                <div class="cards cards1"></div>
+                <div class="cards cards2"></div>
+            </div>
+        </div>
+
+    <template id = 'cardTemplate'>
+        <div class="card">
+            <img src="#" alt="cardPic" class="cardPic">
+            <h1 class="cardName">
+                cardName
+            </h1>
+            <div class="cardDescr">
+                card
+            </div>
+        </div>
+    </template>
+
+        <div class="endTurn">End turn</div>
+        <img src="imgs/ui/cancel.png" class="cancelCard">
+        <div class="noStanceError">Select a stance to play a card</div>
+        <div class="noStaminaError">You don't have stamina to play this card</div>
+        <div class="setStanceAfterCardPlayError">You cannot change a stance once you played a card this turn</div>
+        
+        <div class="playerBattleUI">
+            <img src="imgs/ui/deck/deckPic.png" class="deck">
+            <div class="hand">
+              
+            </div>
+            <div class="changeStance">
+                <button class="changeStanceButton">Change stance</button>
+                <div class="changeStanceMenu">
+                    <div class="stance foolsGuard"><div class="stanceDescription"></div></div>
+                    <div class="stance longpointGuard"><div class="stanceDescription"></div></div>
+                    <div class="stance highGuard"><div class="stanceDescription"></div></div>
+                    <div class="stance plowGuard"><div class="stanceDescription"></div></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
